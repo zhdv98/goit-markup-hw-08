@@ -42,7 +42,9 @@ header {
   background-color: var(--primary-backgorund-color);
   color: var(--primary-text-color);
 }
-
+.header-logo {
+  font-family: 'Raleway' sans-serif;
+}
 .web {
   color: var(--accent-color);
 }
