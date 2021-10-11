@@ -29,9 +29,25 @@
   text-decoration: none;
 }
 
+/* ------------logo------------ */
+.web {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.studio {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-title-color);
+}
+
 /*--------- body--------- */
 body {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--title-text-color);
   font-size: 1.7;
   background-color: var(--primary-backgorund-color);
@@ -43,7 +59,7 @@ header {
   color: var(--primary-text-color);
 }
 .header-logo {
-  font-family: 'Raleway' sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .web {
   color: var(--accent-color);
@@ -85,6 +101,12 @@ header {
 }
 
 .section-one-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--logo-white-color);
 }
 .btn-create-order {
@@ -146,6 +168,7 @@ header {
   background-color: var(--third-background-color);
 }
 .footer-link-adress {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -153,6 +176,7 @@ header {
 }
 
 .footer-link {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -162,7 +186,7 @@ header {
 /* --------------portfolio-------------- */
 
 .btn-nav {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
