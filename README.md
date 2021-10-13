@@ -1,4 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-HW2
-https://zhdv98.github.io/goit-markup-hw-02/
+HW3
