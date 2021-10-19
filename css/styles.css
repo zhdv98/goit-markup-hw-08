@@ -263,6 +263,7 @@ a {
 
 /* --------------about-us-------------- */
 .about-us {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .about-list {
@@ -270,6 +271,9 @@ a {
 }
 .about-item:not(:last-child) {
   margin-right: 30px;
+}
+.portfolio-text {
+  margin-bottom: 50px;
 }
 .about-title {
   font-weight: 500;
@@ -375,6 +379,10 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+.about-us-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .examples-list {
