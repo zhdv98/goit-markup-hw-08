@@ -39,10 +39,13 @@ li {
 }
 /*--------- body--------- */
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+
+  background-color: var(--logo-white-color);
   color: var(--title-text-color);
-  font-size: 1.7;
-  background-color: var(--primary-background-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* -------------visually-hidden------------- */
