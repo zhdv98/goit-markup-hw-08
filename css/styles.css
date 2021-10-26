@@ -577,7 +577,7 @@ a {
   text-decoration: none;
 }
 .examples-sites-link:focus,
-.examples-sites-link:focus {
+.examples-sites-link:hover {
   outline: 1px solid #eeeeee;
   box-shadow: var(--portfolio-list-item-shadow);
 }
