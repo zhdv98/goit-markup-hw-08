@@ -102,6 +102,7 @@ body {
 }
 
 /* ---------header--------- */
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -148,6 +149,12 @@ body {
   color: var(--primary-text-color);
 }
 
+.header-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+  vertical-align: middle;
+}
+
 .menu-link {
   color: var(--title-text-color);
   padding-top: 32px;
@@ -182,6 +189,11 @@ body {
 .header-contacts-link:hover {
   color: var(--accent-color);
 }
+.header-contacts-link:focus .header-icon,
+.header-contacts-link:hover .header-icon {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 /* --------section-one-------- */
 .section-one {
@@ -189,8 +201,8 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
+      rgba(25, 28, 38, 0.4),
+      rgba(25, 28, 38, 0.4)
     ),
     url(../images/main-page/index_bg.jpg);
 }
@@ -374,8 +386,8 @@ a {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
-.client-item:hover .client-icon,
-.client-item:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 /* ---------- our-clients---------- */
@@ -466,6 +478,10 @@ a {
 .social-item {
   display: flex;
   justify-content: center;
+  margin-top: 16px;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-link {
   display: flex;
@@ -499,12 +515,21 @@ a {
   text-transform: uppercase;
   color: var(--logo-white-color);
 }
+.footer .social-icon {
+  fill: var(--logo-white-color);
+}
+.footer .social-menu {
+  margin-top: 20px;
+}
+.footer .social-text-title {
+  margin-bottom: -16px;
+}
 /* --------------portfolio-------------- */
 
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-bottom: -30px;
+  /* margin-bottom: -30px; */
 }
 .btn-nav {
   font-family: Roboto, sans-serif;
