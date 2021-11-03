@@ -612,6 +612,15 @@ a {
   justify-content: center;
   margin-top: 16px;
 }
+.social-item-container {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--secondary-bg-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
