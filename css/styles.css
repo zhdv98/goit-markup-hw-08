@@ -190,7 +190,7 @@ body {
 }
 .menu-list {
   display: flex;
-  position: relative;
+  /* position: relative; */
 }
 
 .menu-list .item:not(:last-child) {
@@ -504,23 +504,25 @@ a {
   margin-right: 30px;
 }
 .client-icon {
+  width: 106px;
+  height: 60px;
   fill: var(--item-client);
   transition: color 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
 }
-.client-icon {
-  width: 106px;
-  height: 60px;
-  fill: var(--item-client);
-}
+
 .client-link:hover,
 .client-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+  transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-color);
+  transition: color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 /* ---------- our-clients---------- */
 .our-clients {
@@ -612,11 +614,12 @@ a {
   justify-content: center;
   margin-top: 16px;
 }
+
 .social-item-container {
   display: flex;
-  height: 120px;
+  /* height: 120px; */
   margin-bottom: 30px;
-  background: var(--secondary-bg-color);
+  /* background: var(--secondary-bg-color); */
   border-radius: 4px;
   justify-content: center;
   align-items: center;
