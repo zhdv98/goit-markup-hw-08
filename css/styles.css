@@ -410,6 +410,7 @@ a {
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
+  padding: 40px;
 }
 .close-btn {
   position: absolute;
@@ -430,6 +431,65 @@ a {
 .close-btn:hover,
 .close-btn:focus {
   fill: var(--accent-color);
+}
+
+/* form */
+
+.modal-form {
+  display: block;
+}
+
+.form-text-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.modal-label {
+  position: relative;
+  width: 41px;
+  height: 14px;
+
+  font-family: 'Roboto' sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+.modal-lable-addtional {
+  width: 80px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 6px;
+  padding-left: 30px;
+}
+.modal-form-data {
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+.modal-form-icon {
+  display: block;
+  top: 0px;
+  left: 0px;
+  fill: var(--logo-black-color);
+}
+.btn-modal {
+  margin-top: 30px;
 }
 /* --------------about-us-------------- */
 .about-us {

@@ -83,42 +83,48 @@
               <use href="./images/symbol-defs.svg#icon-cross"></use>
             </svg>
           </button>
-          <div class="form-box">
+       
+            <form action="" class="modal-form" name="form-data"></form>
             <p class="form-text-title">Оставьте свои данные, мы вам перезвоним</p>
-            <form action="git" name="form-data">
-              <label for="user_name" class="modal-label"
-                >Имя
-                <input class="modal-input" type="text" name="username" id="user_name" autofocus />
-               <svg width="18" height="18">
+
+            <div class="modal-dialog">
+              <label for="name-people" class="modal-label"> Имя
+                <input type="text" class="modal-input" name="" id="name-people" autofocus>
+                <svg width="12" height="12" class="modal-form-icon">
                   <use href="./images/symbol-defs.svg#icon-person-modal"></use>
                 </svg>
-              </label>
-             
-                <label for="user_number"
-                >Телефон
-                <svg width="18" height="18">
-                  <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
-                </svg>
-              </label>
-              <input type="tel" name="phone_number" id="user_number" />
+                </label>
 
-              <label for="user_email">
-                Почта
-                <svg width="18" height="18">
+                <label for="user-mail" class="modal-label">Почта
+                <input type="text" class="modal-input" name="email" id="user-mail">
+                <svg width="18" height="18" class="modal-form-icon">
                   <use href="./images/symbol-defs.svg#icon-email-modal"></use>
                 </svg>
-              </label>
-              <input type="email" name="email" id="user_email" />
+                </label>
 
-              <label for="comment">Комментарий</label>
-              <textarea name="comment" rows="5" placeholder="Введите текст" resize: none id="comment"></textarea>
-              <label>
+                <label for="user-tel" class="modal-label">Телефон
+                <input type="tel" class="modal-input" name="tel" id="user-tel">
+                <svg width="18" height="18" class="modal-form-icon">
+                  <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+                </svg>
+                </label>
+                <label  for="user-comments" class="modal-label modal-lable-addtional" for="comment">Комментарий</label>
+              <textarea class="modal-form-data" 
+              name="comment" 
+              rows="5" 
+              id="user-comments" 
+              placeholder="Введите текст" 
+              resize: none id="comment"></textarea>
+              
+            </div>
+                <label class="label-checkbox">
                 <input type="checkbox" name="agreement" required />
-                Соглашаюсь с рассылкой и принимаю Условия договора 
-              </label>
-              <button type="submit" class="btn-create-order">Отправить</button>
+                Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                </label>
+
+              <button class="btn-create-order btn-modal" type="submit" >Отправить</button>
             </form>
-          </div>
+         
         </div>
       </div>
 
