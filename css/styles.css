@@ -786,6 +786,9 @@ textarea {
   text-transform: uppercase;
   color: var(--logo-white-color);
 }
+.subscribe-footer {
+  margin-left: 93px;
+}
 .footer .social-icon {
   fill: var(--logo-white-color);
 }
@@ -796,14 +799,61 @@ textarea {
   margin-bottom: -16px;
 }
 .subscribe-input {
-  padding: 15px;
   width: 358px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  min-height: 50px;
+  outline: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: inherit;
-  color: var(--logo-bg-white-color);
+  padding: 15px 0px 15px 16px;
+  margin-right: 12px;
+
+  background-color: var(--third-background-color);
+  box-shadow: 4px, 0px, 4px rgba(0, 0, 0, 0.15);
 }
+.subscribe-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+.submit-footer-button {
+  display: inline-block;
+  width: 200px;
+  min-height: 50px;
+  padding: 10px 62px 10px 29px;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: transparent;
+
+  box-shadow: 4px, 0px, 4px rgba(0, 0, 0, 0.15);
+
+  color: var(--social-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button-field {
+  position: relative;
+}
+.submit-footer-button:hover,
+.submit-footer-button:focus {
+  background-color: #188ce8;
+  outline: 1px solid #188ce8;
+}
+.footer-button-icon {
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  background-image: url(../images/icon\ send.svg);
+  cursor: pointer;
+  position: absolute;
+}
+
 /* --------------portfolio-------------- */
 
 .portfolio {

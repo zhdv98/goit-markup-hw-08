@@ -539,8 +539,7 @@
         </div>
          <div class="subscribe-footer">
           <p class="subscribe-text-title">Подпишитесь на рассылку</p>
-          <form class="subscribe-label" name="e-mail">
-            <label class="subscribe-label" for="subscribe-email"></label>
+          <form class="subscribe-label" action="#">
             <input
               class="subscribe-input"
               type="email"
@@ -549,11 +548,12 @@
               placeholder="E-mail"
               required
             />
-            <button type="submit" class="btn-create-order">
-              Подписаться
-              <svg class="icon-send" width="24" height="24">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
+           <samp class="footer-button-field">
+              <button type="submit" class="submit-footer-button">
+                Подписаться
+              </button>
+              <samp class="footer-button-icon"></samp>
+            </samp>
             </button>
           </form>
         </div>
