@@ -90,8 +90,10 @@
 
   color: var(--primary-text-color);
 }
+
 .modal-input:focus,
 .modal-form-data:focus {
+  outline: none;
   border-color: var(--accent-color);
 }
 .modal-input {
