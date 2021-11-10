@@ -1,0 +1,64 @@
+.social-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.team-social-menu {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.social-item {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-item-container {
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: fill 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--social-color);
+}
+.social-link {
+  fill: var(--item-client);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--logo-white-color);
+}
+
+.social-text-title,
+.subscribe-text-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--logo-white-color);
+}

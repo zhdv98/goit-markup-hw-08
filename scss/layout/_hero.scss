@@ -1,0 +1,60 @@
+.section-hero {
+  padding-top: 94px;
+}
+
+.hero-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.hero-list {
+  width: 270px;
+}
+.hero-list::before {
+  display: block;
+  content: '';
+  height: 120px;
+  fill: var(--title-text-color);
+  background-size: auto;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+.menu-list .hero-list:not(:last-child) {
+  margin-right: 30px;
+}
+.btn {
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+}
+
+.hero-item-antena::before {
+  background-image: url(../images/main-page/antenna.svg);
+}
+.hero-item-clock::before {
+  background-image: url(../images/main-page/clock.svg);
+}
+.hero-item-diagram::before {
+  background-image: url(../images/main-page/pc.svg);
+}
+.hero-item-astronavt::before {
+  background-image: url(../images/main-page/astronaut.svg);
+}
