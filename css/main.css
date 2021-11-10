@@ -233,6 +233,7 @@ body {
 .modal-input:focus,
 .modal-form-data:focus {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .modal-input {
