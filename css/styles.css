@@ -29,11 +29,6 @@ ul {
   list-style: none;
 }
 
-/* li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-} */
-
 *,
 ::after,
 ::before {
@@ -189,7 +184,6 @@ body {
 }
 .menu-list {
   display: flex;
-  /* position: relative; */
 }
 
 .menu-list .item:not(:last-child) {
@@ -264,7 +258,6 @@ body {
 .btn-create-order:hover,
 .btn-create-order:focus {
   color: var(--logo-white-color);
-  /* background-color: var(--hero-btn-hover); */
   background-color: var(--accent-color);
 }
 
@@ -474,13 +467,10 @@ a {
 }
 .modal-input:focus,
 .modal-form-data:focus {
-  outline: none;
   border-color: var(--accent-color);
 }
 .modal-input {
   width: 100%;
-  outline: 1px solid rgba(33, 33, 33, 0.2);
-  /* border-radius: 4px; */
   padding: 11px 42px;
   box-shadow: 1px, 0px, 2px rgba(0, 0, 0, 0.2), 1px, 0px,
     1px rgba(0, 0, 0, 0.14), 3px, 0px, 1px rgba(0, 0, 0, 0.12);
@@ -496,7 +486,6 @@ textarea {
 .modal-form-data {
   width: 100%;
   height: 120px;
-  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
   margin-top: 4px;
@@ -600,11 +589,7 @@ textarea {
   background-color: var(--primary-background-color);
   box-shadow: var(--portfolio-list-item-shadow);
 }
-/* 
-.about-item:hover,
-.about-item:focus {
-  
-} */
+
 .portfolio-text {
   margin-bottom: 50px;
 }
@@ -835,7 +820,6 @@ textarea {
 }
 .subscribe-input:focus {
   border-color: var(--accent-color);
-  outline: none;
 }
 .submit-footer-button {
   display: inline-block;
@@ -883,7 +867,6 @@ textarea {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* margin-bottom: -30px; */
 }
 .btn-nav,
 .btn-nav-f {
@@ -963,9 +946,6 @@ textarea {
   margin-bottom: 30px;
   list-style: none;
 }
-/* .examples-sites-list:nth-child(3n) {
-  margin-right: 0px;
-} */
 .item-img {
   display: block;
   width: 100%;
