@@ -36,11 +36,11 @@
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms var(--timing-function);
-}
-.examples-sites-link:focus,
-.examples-sites-link:hover {
-  outline: 1px solid #eeeeee;
-  box-shadow: var(--portfolio-list-item-shadow);
+  &:focus,
+  &:hover {
+    outline: 1px solid #eeeeee;
+    box-shadow: var(--portfolio-list-item-shadow);
+  }
 }
 .portfolio-desc {
   padding: 20px 24px;

@@ -2,19 +2,20 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--secondary-bg-color);
-}
-.about-us .social-icon {
-  fill: var(--item-client);
+  .social-icon {
+    fill: var(--item-client);
+  }
 }
 .about-list {
   display: flex;
 }
-.about-item:not(:last-child) {
-  margin-right: 30px;
-}
 .about-item {
   background-color: var(--primary-background-color);
   box-shadow: var(--portfolio-list-item-shadow);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .portfolio-text {
@@ -50,6 +51,10 @@
 .client-item {
   display: block;
   flex-basis: calc(100% / 6 - 30px);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .client-link {
   display: flex;
@@ -61,9 +66,21 @@
   border-radius: 4px;
   transition: color 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
-}
-.client-item:not(:last-child) {
-  margin-right: 30px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transition: color 250ms var(--timing-function),
+      border-color 250ms var(--timing-function);
+  }
+
+  .client-icon:hover,
+  .client-icon:focus {
+    fill: var(--accent-color);
+    transition: color 250ms var(--timing-function),
+      border-color 250ms var(--timing-function);
+  }
 }
 .client-icon {
   width: 106px;
@@ -73,19 +90,6 @@
     border-color 250ms var(--timing-function);
 }
 
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-  transition: color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-}
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  fill: var(--accent-color);
-  transition: color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-}
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;
