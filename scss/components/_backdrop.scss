@@ -16,10 +16,10 @@
       visibility 250ms var(--timing-function);
   }
 }
-.backdrop.visually-hidden .modal {
+.backdrop.visually-hidden .backdrop__modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,7 +33,7 @@
   transition: transform 250ms var(--timing-function);
   padding: 40px;
 }
-.close-btn {
+.backdrop__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -54,17 +54,17 @@
     fill: var(--accent-color);
   }
 }
-.modal-form {
+.backdrop__form {
   display: block;
 }
 
-.form-text-title {
+.backdrop__text-title {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
 }
-.modal-label {
+.backdrop__input-label {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -74,10 +74,10 @@
 
   color: var(--primary-text-color);
 }
-.agreement-check-modal:focus + .label-checkbox::before {
+.backdrop__agreement:focus + .backdrop__label-checkbox::before {
   outline: 1px solid var(--accent-color);
 }
-.modal-lable-addtional {
+.backdrop__lable-addtional {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -87,7 +87,7 @@
 
   color: var(--primary-text-color);
 }
-.modal-input {
+.backdrop__input {
   width: 100%;
   padding: 11px 42px;
   box-shadow: 1px, 0px, 2px rgba(0, 0, 0, 0.2), 1px, 0px,
@@ -103,7 +103,7 @@
     outline: none;
   }
 }
-.modal-form-data {
+.backdrop__form-data {
   width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -132,7 +132,7 @@
   }
 }
 
-.modal-form-icon {
+.backdrop__form-icon {
   display: block;
 
   position: absolute;
@@ -144,22 +144,22 @@
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus + .modal-form-icon {
+.backdrop__input:focus + .backdrop__form-icon {
   fill: var(--accent-color);
 }
 
-.btn-modal {
+.backdrop__btn {
   margin-top: 30px;
   height: 50px;
   width: 200px;
 }
-.form-input-icon {
+.backdrop__input-icon {
   display: block;
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
 }
-.label-checkbox {
+.backdrop__label-checkbox {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -188,14 +188,14 @@
         cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.agreement-check-modal:checked + .label-checkbox::before {
+.backdrop__agreement:checked + .backdrop__label-checkbox::before {
   border-radius: 2px;
   border: var(--accent-color);
   background-image: url(../images/icon-check.svg);
   background-size: cover;
   background-origin: border-box;
 }
-.link-agreement {
+.backdrop__link-agreement {
   color: var(--accent-color);
   text-decoration: underline;
 }

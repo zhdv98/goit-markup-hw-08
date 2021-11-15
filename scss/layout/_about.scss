@@ -6,10 +6,10 @@
     fill: var(--item-client);
   }
 }
-.about-list {
+.about-us__list {
   display: flex;
 }
-.about-item {
+.about-us__item {
   background-color: var(--primary-background-color);
   box-shadow: var(--portfolio-list-item-shadow);
 
@@ -18,10 +18,7 @@
   }
 }
 
-.portfolio-text {
-  margin-bottom: 50px;
-}
-.about-title {
+.about-us__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -30,7 +27,7 @@
   margin-bottom: 10px;
   color: var(--title-text-color);
 }
-.about-desc {
+.about-us__desc {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -38,10 +35,11 @@
   color: var(--primary-text-color);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
+.about-us__desc-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 .client-menu {
   display: flex;
   justify-content: space-between;
