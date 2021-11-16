@@ -7,49 +7,54 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  .link-map {
+    color: var(--logo-white-color);
+    text-decoration: none;
+  }
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address .link-map {
-  color: var(--logo-white-color);
-  text-decoration: none;
+.address-menu {
+  .footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-.address-menu .footer-link {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-}
-.address-menu .footer-link:hover,
-.address-menu .footer-link:focus {
-  color: var(--accent-color);
+.address-menu {
+  .footer-link {
+    &:focus,
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
 }
 .address-container {
   margin-right: 70px;
 }
-.footer .social-link {
-  background: rgba(255, 255, 255, 0.1);
+.footer {
+  .social-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
-.footer .social-link:hover,
-.footer .social-link:focus {
-  background-color: var(--accent-color);
+.footer {
+  .social-link {
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
 }
 
 .footer {
   background-color: var(--third-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer .social {
-  display: block;
-  width: 206px;
-  height: 80px;
-}
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer-link:focus,
-.footer-link:hover {
-  color: var(--accent-color);
+  .social {
+    display: block;
+    width: 206px;
+    height: 80px;
+  }
 }
 .footer-link {
   font-style: normal;
@@ -57,6 +62,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-container {
@@ -89,10 +98,12 @@
   color: var(--social-color);
   background-color: var(--third-background-color);
   box-shadow: 4px, 0px, 4px rgba(0, 0, 0, 0.15);
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
 }
-.subscribe-input:focus {
-  border-color: var(--accent-color);
-}
+
 .submit-footer-button {
   display: inline-block;
   width: 200px;
@@ -114,14 +125,14 @@
   background-color: var(--accent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    outline: 1px solid #188ce8;
+  }
 }
 .footer-button-field {
   position: absolute;
-}
-.submit-footer-button:hover,
-.submit-footer-button:focus {
-  background-color: #188ce8;
-  outline: 1px solid #188ce8;
 }
 .footer-button-icon {
   width: 24px;
