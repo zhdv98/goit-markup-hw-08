@@ -91,9 +91,9 @@
     flex-basis: calc((100% - 150px) / 6);
   }
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 .client-link {
   display: flex;

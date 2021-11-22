@@ -193,28 +193,28 @@
         <div class="container">
           <ul class="hero__menu-list list header__menu-list">
             <li class="hero__list hero__item-antena">
-              <h3 class="hero__title">Внимание к деталям</h3>
+              <h3 class="hero__section__title">Внимание к деталям</h3>
               <p class="hero__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
             <li class="hero__list hero__item-clock">
-              <h3 class="hero__title">Пунктуальность</h3>
+              <h3 class="hero__section__title">Пунктуальность</h3>
               <p class="hero__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
             <li class="hero__list hero__item-diagram">
-              <h3 class="hero__title">Планирование</h3>
+              <h3 class="hero__section__title">Планирование</h3>
               <p class="hero__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
             <li class="hero__list hero__item-astronavt">
-              <h3 class="hero__title">Современные технологии</h3>
+              <h3 class="hero__section__title">Современные технологии</h3>
               <p class="hero__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -757,26 +757,25 @@
           </ul>
         </div>
         
-         <div class="subscribe-footer">
-          <p class="subscribe-text-title">Подпишитесь на рассылку</p>
-          <form class="subscribe-label" action="#">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="email"
-              id="subscribe-email"
-              placeholder="E-mail"
-              required
-            />
-           <samp class="footer-button-field">
-              <button type="submit" class="submit-footer-button">Подписаться</button>
-              <samp class="footer-button-icon"></samp>
-            </samp>
-            </button>
-          </form>
-        </div>
+         <div class="footer-mailing">
+                <b class="footer-mailin-accent">Подпишитесь на рассылку</b>
+                <form class="footer-form">
+
+                        <label class="footer-form__label">
+                            <input class="footer-form__input" type="email" name="footer-email" placeholder="E-mail">
+                        </label>
+                        
+                        <button class="submit-footer-button" type="submit">Подписаться
+                            <svg class="footer-form__icon">
+                                <use href="./images/icon-send.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    
+                </form>
+            </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

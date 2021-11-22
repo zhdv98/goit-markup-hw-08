@@ -1,5 +1,11 @@
 .hero__section {
-  padding-top: 94px;
+  color: var(--logo-white-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .hero__title {
@@ -13,6 +19,18 @@
   margin-bottom: 10px;
   @media screen and (min-width: $tablet) {
     text-align: left;
+  }
+}
+.hero__menu-list {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -60,6 +78,20 @@
 }
 a {
   text-decoration: none;
+}
+.hero__section__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .hero__item-antena::before {
