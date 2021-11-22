@@ -38,4 +38,8 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 676px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
