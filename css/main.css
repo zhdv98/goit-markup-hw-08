@@ -481,11 +481,6 @@ body {
   color: var(--logo-white-color);
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .portfolio-text {
   margin-bottom: 50px;
 }
@@ -879,6 +874,10 @@ a {
 
 .hero__item-astronavt::before {
   background-image: url(../images/main-page/astronaut.svg);
+}
+
+.section--other-padding {
+  padding-top: 0px;
 }
 
 @media screen and (max-width: 1199px) {
