@@ -102,6 +102,18 @@ body {
   }
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 676px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .header__web {
   min-width: none;
   font-family: 'Raleway', sans-serif;
