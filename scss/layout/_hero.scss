@@ -41,7 +41,6 @@
   color: var(--primary-text-color);
 }
 .hero__list {
-  // width: 270px;
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -68,11 +67,10 @@
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
 }
-.hero__menu-list .hero__list:not(:last-child) {
-  margin-right: 30px;
-}
+// .hero__menu-list .hero__list:not(:last-child) {
+//   margin-right: 30px;
+// }
 .btn {
-  //background-color: var(--accent-color);
   border: 1px solid transparent;
   border-radius: 4px;
 }
