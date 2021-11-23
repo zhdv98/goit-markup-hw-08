@@ -28,16 +28,16 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-p,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
+p {
+  margin: 0px;
+}
+
 ul {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
@@ -45,6 +45,20 @@ ul {
 ::after,
 ::before {
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
