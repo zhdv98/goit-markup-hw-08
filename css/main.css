@@ -1205,16 +1205,14 @@ a {
 }
 
 .footer-mailin-accent {
-  font-style: normal;
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-mailin-accent:hover, .footer-mailin-accent:focus {
-  color: var(--accent-color);
+  text-transform: uppercase;
+  color: var(--secondary-bg-color);
 }
 
 @media screen and (max-width: 767px) {
