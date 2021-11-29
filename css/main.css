@@ -290,7 +290,26 @@ body {
 }
 
 .backdrop__form {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: left;
+}
+
+.backdrop__form__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+  .backdrop__form__title {
+    text-align: center;
+  }
 }
 
 .backdrop__text-title {
