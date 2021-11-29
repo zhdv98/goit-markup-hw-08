@@ -22,14 +22,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__menu-nav">
+      <div class="container">
         <nav class="header__nav">
           <a href="index.html" class="header__web">
             Web
             <span class="header__studio">Studio</span>
           </a>
 
-          <ul class="header__menu-list list">
+          <ul class="header__menu-list  header__menu-list--margin">
             <li class="header__item">
               <a class="header__menu-link current" href="./index.html">Студия</a>
             </li>
@@ -105,7 +105,6 @@
                         </li>
                     </ul>
                 </div> 
-
       </div>
 </div>
     </header>
@@ -193,29 +192,51 @@
       <!-- section 2 -->
       <section class="section /*hero__section*/">
         <div class="container">
-          <ul class="hero__menu-list list header__menu-list">
-            <li class="hero__list hero__item-antena">
+          <ul class="hero__menu-list">
+            <li class="hero__list">
+              <div class="hero__wrapper">
+                <svg class="hero__icon">
+                  <use href="./images/main-page/antenna.svg#antenna"> </use>
+                </svg>
+                </div>
               <h3 class="hero__section__title">Внимание к деталям</h3>
               <p class="hero__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="hero__list hero__item-clock">
+            <li class="hero__list">
+              <div class="hero__wrapper">
+                <svg class="hero__icon">
+                  <use href="./images/main-page/clock.svg#clock"> </use>
+                </svg>                
+            </div>
               <h3 class="hero__section__title">Пунктуальность</h3>
               <p class="hero__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
+                
             </li>
-            <li class="hero__list hero__item-diagram">
+            <li class="hero__list">
+              <div class="hero__wrapper">
+                <svg class="hero__icon">
+                  <use href="./images/main-page/pc.svg#pc"> </use>
+                </svg>
+            </div>
               <h3 class="hero__section__title">Планирование</h3>
               <p class="hero__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
+                
             </li>
-            <li class="hero__list hero__item-astronavt">
+            <li class="hero__list">
+              <div class="hero__wrapper">
+                <svg class="hero__icon">
+                  <use href="./images/main-page/astronaut.svg#astronaut"> </use>
+                </svg>
+            </div>
               <h3 class="hero__section__title">Современные технологии</h3>
               <p class="hero__text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -229,7 +250,7 @@
       <!-- section 3 -->
       <section class="photos__section section section--other-padding">
         <div class="container">
-          <h2 class="photos photos__pre-text">Чем мы занимаемся</h2>
+          <h2 class="photos section-title">Чем мы занимаемся</h2>
           <ul class="photos__list">
             <li class="photos__list-item">
                <picture>
@@ -282,7 +303,7 @@
       <!-- section about-us -->
       <section class="section about-us">
         <div class="container">
-          <h2 class="photos__pre-text">Наша команда</h2>
+          <h2 class="section-title">Наша команда</h2>
           <ul class="about-us__list list">
             <li class="about-us__item">
               <picture>
@@ -642,48 +663,48 @@
       <section class="section ">
         <!-- our-clients -->
         <div class="container">
-          <h2 class="photos__pre-text portfolio-text">Постоянные клиенты</h2>
-          <ul class="client-menu list">
-            <li class="client-item">
-              <a href="" class="client-link">
-                <svg class="client-icon" width="41" height="46.7">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="client list">
+            <li class="client__item">
+              <a href="" class="client__link">
+                <svg class="client__icon" width="41" height="46.7">
                   <use href="./images/symbol-defs.svg#icon-union"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
-              <a href="" class="client-link">
-                <svg class="client-icon" width="40" height="52">
+            <li class="client__item">
+              <a href="" class="client__link">
+                <svg class="client__icon" width="40" height="52">
                   <use
                     href="./images/symbol-defs.svg#icon-company-tag-line-here"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
-              <a href="" class="client-link">
-                <svg class="client-icon" width="43.46" height="41.18">
+            <li class="client__item">
+              <a href="" class="client__link">
+                <svg class="client__icon" width="43.46" height="41.18">
                   <use href="./images/symbol-defs.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
-              <a href="" class="client-link">
-                <svg class="client-icon" width="84.44" height="40.62">
+            <li class="client__item">
+              <a href="" class="client__link">
+                <svg class="client__icon" width="84.44" height="40.62">
                   <use href="./images/symbol-defs.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
-              <a href="" class="client-link">
-                <svg class="client-icon" width="62.54" height="45.43">
+            <li class="client__item">
+              <a href="" class="client__link">
+                <svg class="client__icon" width="62.54" height="45.43">
                   <use href="./images/symbol-defs.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
-              <a href="" class="client-link">
-                <svg class="client-icon" width="93.79" height="43.93">
+            <li class="client__item">
+              <a href="" class="client__link">
+                <svg class="client__icon" width="93.79" height="43.93">
                   <use
                     href="./images/symbol-defs.svg#icon-comapny-tag-line"
                   ></use>

@@ -7,7 +7,6 @@
   }
 }
 .about-us__list {
-  // display: flex;
   @media screen and (max-width: 767px) {
     display: block;
   }
@@ -32,8 +31,8 @@
     }
   }
   @media screen and (min-width: 768px) {
+    width: 354px;
     margin: 15px;
-    flex-basis: calc((100%-60px) / 2);
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 120px) / 4);
@@ -62,7 +61,7 @@
   padding-bottom: 30px;
 }
 
-.client-menu {
+.client {
   display: flex;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
@@ -75,60 +74,46 @@
   @media screen and (min-width: $desktop) {
     margin: -15px;
   }
-}
-.client-item {
-  display: block;
-  @media screen and (max-width: 767px) {
-    margin: 15px;
-    flex-basis: calc((100% - 60px) / 2);
-  }
-  @media (min-width: $tablet) and (max-width: 1199px) {
-    margin: 15px;
-    flex-basis: calc((100% - 90px) / 3);
-  }
-  @media screen and (min-width: $desktop) {
-    margin: 15px;
-    flex-basis: calc((100% - 150px) / 6);
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      margin: 15px;
+      flex-basis: calc((100% - 60px) / 2);
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+      margin: 15px;
+      flex-basis: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 15px;
+      flex-basis: calc((100% - 150px) / 6);
+    }
   }
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-}
-.client-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--item-client);
-  border-radius: 4px;
-  transition: color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
     transition: color 250ms var(--timing-function),
-      border-color 250ms var(--timing-function);
+      border 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }
   }
 
-  .client-icon:hover,
-  .client-icon:focus {
-    fill: var(--accent-color);
-    transition: color 250ms var(--timing-function),
-      border-color 250ms var(--timing-function);
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
   }
 }
-.client-icon {
-  width: 106px;
-  height: 60px;
-  fill: var(--item-client);
-  transition: color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-}
-
 .our-clients {
   padding-top: 94px;
   padding-bottom: 94px;

@@ -3,23 +3,12 @@
 }
 .header__nav {
   display: flex;
-  align-items: center;
+  //align-items: center;
 }
-
-.header__menu-nav {
+.header .container {
   display: flex;
   align-items: center;
-}
-
-.header__item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  cursor: pointer;
-}
-.header__item:not(:last-child) {
-  margin-right: 50px;
+  justify-content: space-between;
 }
 
 .header__logo {
@@ -50,36 +39,42 @@
   vertical-align: middle;
 }
 
-.header__menu-link,
-.header__contacts-link {
+.header__menu-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  color: var(---title-text-color);
   font-weight: 500;
-  font-size: 14px;
-  display: block;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  line-height: 1.14;
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.header__menu-link {
-  position: relative;
+
+.header__menu-link--current {
+  color: var(--accent-color);
 }
-.header__menu-link.current::after {
+.header__menu-link::after {
+  content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
-  content: '';
+  bottom: 0;
+  display: block;
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
-  display: block;
   border-radius: 2px;
+  opacity: 0;
 }
-.current {
-  color: var(--accent-color);
+.header__menu-link--current::after {
+  opacity: 1;
 }
+
 .header__menu-list {
   display: flex;
   &--margin {
@@ -92,24 +87,14 @@
     margin-left: 88px;
   }
 }
-.header__menu-list .header__item:not(:last-child) {
-  margin-right: 50px;
-}
 
-.header__menu-link:focus,
-.header__menu-link:hover {
-  color: var(--accent-color);
+.header__menu-list .header__item + .header__item {
+  margin-left: 50px;
 }
 
 .header__list {
   @media screen and (max-width: 767px) {
     display: none;
-  }
-  @media (min-width: $tablet) and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -117,7 +102,6 @@
     align-items: center;
   }
 }
-
 .header__list__item:not(:last-child) {
   @media (min-width: $tablet) and (max-width: 1199px) {
     margin-bottom: 10px;
@@ -132,7 +116,7 @@
 .header__contacts-link {
   display: flex;
   align-items: center;
-  color: var(--primary-text-color);
+  color: var(---title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
