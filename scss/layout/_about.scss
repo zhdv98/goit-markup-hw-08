@@ -1,6 +1,7 @@
 .about-us {
   padding: 60px;
   background-color: var(--secondary-bg-color);
+  align-items: center;
   .social-icon {
     fill: var(--item-client);
   }
@@ -27,6 +28,7 @@
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
+      //align-items: center;
     }
   }
   @media screen and (min-width: 768px) {
