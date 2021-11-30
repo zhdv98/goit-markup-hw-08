@@ -1,133 +1,103 @@
 .backdrop {
   position: fixed;
-  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  padding: 94px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
-  z-index: 1;
-  padding: 15px;
+  z-index: 2;
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
-    transition: opacity 250ms var(--timing-function),
-      visibility 250ms var(--timing-function);
+  }
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
-.backdrop.visually-hidden .backdrop__modal {
-  transform: translate(-50%, -50%) scale(0.7);
-}
 .backdrop__modal {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-  // min-width: 528px;
-  // min-height: 581px;
-  // background: var(--logo-white-color);
-  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  //   0px 2px 1px rgba(0, 0, 0, 0.2);
-  // border-radius: 4px;
-  // transform: translate(-50%, -50%) scale(1);
-  // transition: transform 250ms var(--timing-function);
-  // padding: 40px;
-  min-width: 100%;
-  min-height: 100%;
-  background: var(--logo-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  background-color: var(--primary-background-color);
+  box-shadow: (
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2)
+  );
   border-radius: 4px;
-
-  @media screen and (min-width: 480px) {
-    min-width: 450px;
-    min-height: 609px;
+  @media screen and(min-width:480px) {
+    max-width: 450px;
+  }
+  @media screen and(min-width:1200px) {
     position: absolute;
+    z-index: 102;
+    max-width: 528px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-  }
-
-  @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
-  }
-
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
+    transition: transform 250ms var(--timing-function);
   }
 }
+
 .backdrop__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   width: 30px;
   height: 30px;
-
-  background-color: var(--logo-white-color);
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: fill 250ms var(--timing-function);
-
-  &:focus,
-  &:hover {
+  color: var(--title-text-color);
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover,
+  &:focus > .close-icon {
     fill: var(--accent-color);
+    transition: color 250ms linear var(--timing-function) transrorm 250ms linear
+      var(--timing-function);
   }
 }
 .backdrop__form {
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  text-align: left;
-
-  &__title {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
-    color: var(--primary-title-color);
-    margin-bottom: 12px;
-
-    @media screen and (max-width: 1199px) {
-      text-align: center;
-    }
-  }
 }
 
 .backdrop__text-title {
-  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
   text-align: center;
-  margin-bottom: 40px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
+
 .backdrop__input-label {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.166;
   letter-spacing: 0.01em;
-  margin-bottom: 10px;
-
   color: var(--primary-text-color);
 }
-.backdrop__agreement:focus + .backdrop__label-checkbox::before {
-  outline: 1px solid var(--accent-color);
-}
-.backdrop__lable-addtional {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  margin-bottom: 10px;
 
-  color: var(--primary-text-color);
+.backdrop__input-icon {
+  display: inline-grid;
+  position: relative;
+  margin-bottom: 10px;
 }
 .backdrop__input {
   width: 100%;
@@ -144,6 +114,38 @@
     border-color: var(--accent-color);
     outline: none;
   }
+}
+.backdrop__input:placeholder-shown {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms var(--time-func);
+}
+.backdrop__input:placeholder-shown:focus,
+.backdrop__form-data:placeholder-shown:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+.backdrop__form-data:placeholder-shown {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  transition: border-color 250ms var(--time-func);
+}
+.backdrop__form-icon {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop__input:focus + .backdrop__form-icon {
+  fill: var(--accent-color);
 }
 .backdrop__form-data {
   width: 100%;
@@ -174,26 +176,41 @@
   }
 }
 
-.backdrop__form-icon {
-  display: block;
-
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  fill: var(--title-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop__input:focus + .backdrop__form-icon {
-  fill: var(--accent-color);
+.backdrop__agreement:focus + .backdrop__label-checkbox::before {
+  outline: 1px solid var(--accent-color);
 }
 
+.backdrop__lable-addtional {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+}
 .backdrop__btn {
-  margin-top: 30px;
-  height: 50px;
+  color: var(--primary-background-color);
+  border: none;
+  padding: 0;
   width: 200px;
+  height: 50px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 .backdrop__input-icon {
   display: block;
@@ -202,32 +219,24 @@
   margin-bottom: 10px;
 }
 .backdrop__label-checkbox {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 30px;
-
+  color: var(--primary-text-color);
   &::before {
+    display: inline-block;
     content: '';
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 1px solid #212121;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: 1px solid var(--primary-text-color);
     border-radius: 4px;
-
-    cursor: pointer;
-    margin-right: 7px;
-
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-image 250ms cubic-bezier(0.4, 0, 0.2, 1) background-size 250ms
-        cubic-bezier(0.4, 0, 0.2, 1);
+    height: 16px;
+    width: 15px;
+    transition: background-color 250ms linear var(--timing-function) transrorm
+      250ms linear var(--timing-function);
   }
 }
 .backdrop__agreement:checked + .backdrop__label-checkbox::before {
@@ -240,4 +249,8 @@
 .backdrop__link-agreement {
   color: var(--accent-color);
   text-decoration: underline;
+}
+.form-field-checkbox {
+  margin-bottom: 30px;
+  text-align: center;
 }

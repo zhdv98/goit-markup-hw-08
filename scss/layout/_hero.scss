@@ -8,7 +8,7 @@
   margin-top: 50px;
 }
 
-.hero__title {
+.hero__section__title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -61,18 +61,18 @@
 a {
   text-decoration: none;
 }
-.hero__section__title {
-  text-align: center;
-  color: var(--title-text-color);
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 10px;
-  text-transform: uppercase;
+// .hero__section__title {
+//   text-align: center;
+//   color: var(--title-text-color);
+//   font-weight: 700;
+//   line-height: 1.1;
+//   margin-bottom: 10px;
+//   text-transform: uppercase;
 
-  @media screen and (min-width: $tablet) {
-    text-align: left;
-  }
-}
+//   @media screen and (min-width: $tablet) {
+//     text-align: left;
+//   }
+// }
 .hero__wrapper {
   display: flex;
   align-items: center;
