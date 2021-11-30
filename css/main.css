@@ -242,6 +242,8 @@ body {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
+  z-index: 1;
+  padding: 15px;
 }
 
 .backdrop.is-hidden {
@@ -256,17 +258,33 @@ body {
 }
 
 .backdrop__modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 100%;
+  min-height: 100%;
   background: var(--logo-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
-  padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    min-width: 450px;
+    min-height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop__modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
+.backdrop.is-hidden .backdrop__modal {
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .backdrop__close-btn {
