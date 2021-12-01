@@ -453,6 +453,7 @@ body {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+  margin-top: 30px;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
@@ -832,31 +833,31 @@ body {
   fill: var(--accent-color);
 }
 
-.hero__section {
-  color: var(--logo-white-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.hero__section__title {
-  font-family: Roboto;
+.hero__section .hero__section__title {
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-text-color);
   margin-bottom: 10px;
-  text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .hero__section__title {
-    text-align: left;
+@media screen and (max-width: 767px) {
+  .hero__section .hero__section__title {
+    text-align: center;
+  }
+}
+
+.hero__section {
+  padding: 60px 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -889,14 +890,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero__list {
+    max-width: calc(100% / 2 - 30px);
     margin: 15px;
-    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__list {
-    flex-basis: calc((100% - 120px) / 4);
+    max-width: calc(100% / 4 - 30px);
   }
 }
 
@@ -1013,6 +1014,17 @@ a {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.section-clients {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about-us {
@@ -1273,6 +1285,7 @@ a {
 @media screen and (max-width: 767px) {
   .footer .social {
     margin-bottom: 60px;
+    margin-top: 60px;
   }
 }
 
@@ -1509,6 +1522,12 @@ a {
 
 .examples-sites-list:hover .overlay-box {
   transform: translateY(0%);
+}
+
+@media screen and (max-width: 768px) {
+  .examples-sites-list:not(:last-child) {
+    padding-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

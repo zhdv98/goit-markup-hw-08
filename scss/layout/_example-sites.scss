@@ -28,6 +28,11 @@
   &:hover .overlay-box {
     transform: translateY(0%);
   }
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     width: calc(100% / 2 - 30px);
