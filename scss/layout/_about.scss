@@ -5,6 +5,9 @@
   .social-icon {
     fill: var(--item-client);
   }
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .about-us__list {
   @media screen and (max-width: 767px) {
