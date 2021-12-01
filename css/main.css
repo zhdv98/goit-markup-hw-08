@@ -92,9 +92,15 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
+  min-width: 320px;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1010,7 +1016,7 @@ a {
 }
 
 .about-us {
-  padding: 60px;
+  padding: 60px 0;
   background-color: var(--secondary-bg-color);
   align-items: center;
 }
